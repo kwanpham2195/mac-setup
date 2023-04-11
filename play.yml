@@ -9,50 +9,42 @@
     mas_installed_apps:
       - { id: 405843582, name: "Alfred" }
       - { id: 441258766, name: "Magnet" }
-      - { id: 897283731, name: "StrongBox" }
-      - { id: 1221250572, name: "Xnip" }
-      - { id: 824183456, name: "Affinity Photo" }
-      - { id: 1518425043, name: "Boop" }
-      - { id: 1447043133, name: "CursorPro" }
       - { id: 1444383602, name: "GoodNotes 5" }
-      - { id: 905953485, name: "NordVPN" }
-      - { id: 824171161, name: "Affinity Designer" }
-      - { id: 881418622, name: "Affinity Publisher" }
       - { id: 1534275760, name: "Languagetool" }
 
     homebrew_installed_packages:
-      - alacritty
+      # - alacritty
       - argo
       - argocd
       - awscli
-      - bat
+      - bat # cat with wings
       - cmake
-      - coreutils
+      - coreutils # GNU File, Shell, and Text utilities
       - datawire/blackbird/telepresence-legacy
-      - direnv
-      - dog
-      - dua-cli
-      - duf
-      - entr
-      - exa
-      - fd
-      - findutils
-      - fluxcd/tap/flux
+      - direnv # env managing
+      - dog # command line DNS client
+      - dua-cli # View disk space usage and delete unwanted data, fast
+      - duf # Disk Usage/Free Utility
+      - entr # Run arbitrary commands when files change
+      - exa # Modern replacement for 'ls'
+      - fd # Simple, fast and user-friendly alternative to find
+      - findutils # Collection of GNU find, xargs, and locate
+      - fluxcd/tap/flux # a set of continuous and progressive delivery solutions for Kubernetes that are open and extensible
       - fluxctl
       - fzf
-      - gh
-      - git-delta
-      - git-filter-repo
-      - gitui
-      - glow
+      - gh # GitHub command-line
+      - git-delta # A syntax-highlighting pager for git, diff, and grep output
+      - git-filter-repo # Quickly rewrite git repository history
+      - gitui # terminal-ui for git written in rust
+      - glow # Render markdown on the CLI
       - gnu-tar
       - go
       - golangci-lint
       - gomodifytags
       - gopass
       - goreleaser
-      - gron
-      - hadolint
+      - gron # Make JSON greppable!
+      - hadolint # Dockerfile linter, validate inline bash
       - hashicorp/tap/terraform-ls
       - helm
       - hledger
@@ -61,79 +53,81 @@
       - hugo
       - hurl
       - imagemagick
-      - infracost
+      - infracost # Cloud cost estimation for terraform
       - ipython
       - isync
       - jenv
       - jq
       - jupyterlab
-      - k6
-      - k9s
-      - khal
-      - khard
+      - k6 # Load testing tool
+      - k9s # terminal based UI to interact with your Kubernetes clusters
+      - khal # cli calendar
       - kind
-      - koekeishiya/formulae/skhd
-      - koekeishiya/formulae/yabai
+      - koekeishiya/formulae/skhd # Hotkey Daemon MacOS
+      - koekeishiya/formulae/yabai # Tiling Window Manager
       - kube-linter
-      - kubeconform
+      - kubeconform # Kubernetes manifest validation tool
       - kubectx
-      - kubeseal
-      - kubeval
-      - kustomize
-      - kyverno
+      - kubeseal # Store kube secret in git
+      - kubeval # Kubenetes validation
+      - kustomize # Kubernetes native configuration management
+      - kyverno # policy engine for Kubernetes
       - latexindent
-      - lazydocker
+      - lazydocker # terminal UI for both docker and docker-compose
       - lazygit
       - lf
       - lua-language-server
-      - luarocks
-      - mdbook
-      - mitmproxy
-      - moreutils
+      - luarocks # lua package manager
+      - mdbook # command line tool to create books with Markdown
+      - mitmproxy # interactive HTTPS proxy
+      - moreutils # Collection of tools that nobody wrote when UNIX was young
       - msmtp
       - mysql-client
-      - neomutt
+      - neomutt # command line mail reader
       - neovim
       - neovim-remote
-      - newsboat
+      - newsboat # RSS feed reader
       - nmap
-      - nnn
-      - notmuch
+      - nnn # Terminal file manager
+      - notmuch # Thread-based email index, search, and tagging
       - notmuch-mutt
       - npm
+      - n # node version manager
+      - xwmx/taps/nb # note taking app
       - openjdk@11
       - openjdk@17
-      - pandoc
-      - pdfgrep
+      - pandoc # Universal markup converter
+      - pdfgrep # Grep in PDF
       - prettier
-      - pulumi
-      - pwgen
-      - rcm
+      - pulumi # Terraform alt
+      - pwgen # Password gen
+      - rcm # *rc file manager
       - ripgrep
-      - shellcheck
+      - shellcheck # shell script analysis tool
       - sketchybar
-      - slides
-      - stern
-      - stylua
-      - tectonic
+      - slides # Terminal based presentation tool
+      - stern # Tail multiple Kubernetes pods & their containers
+      - stylua # lua code formatter
+      - tectonic # latex engine
       - terraform-docs
       - texlab
       - tflint
       - tig
       - tmux
-      - tokei
+      - tokei # Count code
       - trash-cli
       - tree
       - urlview
       - vale
       - vdirsyncer
-      - viddy
-      - vifm
-      - w3m
+      - viddy # modern watch command
+      - vifm # file manager with curses interface
+      - w3m # Pager/text based browser
       - wget
       - xclip
       - yq
-      - zoxide
+      - zoxide # smart cd command
+      - hashicorp/tap/consul
 
     homebrew_uninstalled_packages: []
 
@@ -142,33 +136,34 @@
       - homebrew/cask-fonts
 
     homebrew_cask_apps:
-      - alt-tab
-      - bartender
-      - betterdisplay # more display options
-      - calibre
-      - cleanshot # screen recording
-      - docker
+      # - alt-tab # Alt tab like window
+      - bartender # Menu bar icon organizer
+      # - betterdisplay # more display options
+      # - docker
       - firefox
       - font-hack-nerd-font
-      - forklift # finder alternative
       - google-cloud-sdk
-      - google-chrome
-      - handbrake
-      - iterm2
-      - karabiner-elements
-      - keycastr
+      # - google-chrome
+      - handbrake # Open-source video transcoder
+      - karabiner-elements # keyboard customizer
+      - keycastr # keystroke visualizer
       - kitty
-      - keepassxc
+      - keepassxc # Password manager app
       - libreoffice
       - macfuse # dependecy of telepresence
-      - middle
-      - min # minimal browser with no distractions
-      - mouse-fix # fix scrolling for external mice
-      - numi
-      - postman
-      - stats
-      - syncthing
+      # - middle # Add middle click to Mac
+      # - min # minimal browser with no distractions
+      # - mouse-fix # fix scrolling for external mice
+      # - numi # Calculator and converter application
+      # - postman
+      - stats # System monitor for the menu bar
+      - syncthing # Sync data between devices
       - skim # pdf viewer for vim-latex
+      - shottr # screencapture tool
+      - boop # scriptable scratchpad for developers
+      # - forklift # finder alternative
+      - linearmouse # mouse util
+      - 1password/tap/1password-cli
 
     homebrew_cask_uninstalled_apps: []
 
@@ -189,18 +184,15 @@
     binaries:
       - name: kubectl
         url: "https://dl.k8s.io/release/v{{ kubectl_version }}/bin/darwin/arm64/kubectl"
-      - name: pet
+      - name: pet # Simple command-line snippet manager
         url: "https://github.com/knqyf263/pet/releases/download/v{{ pet_version }}/pet_{{ pet_version }}_darwin_arm64.tar.gz"
         extract: true
       - name: tfswitch
         url: "https://github.com/warrensbox/terraform-switcher/releases/download/{{tfswitch_version}}/terraform-switcher_{{tfswitch_version}}_darwin_arm64.tar.gz"
         extract: true
-      - name: gh-md-toc
+      - name: gh-md-toc # Generate TOC for README.md
         url: "https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc"
         extract: false
-      - name: goMarkableClient
-        url: "https://github.com/owulveryck/goMarkableStream/releases/download/v{{goMarkableClient_version}}/goMarkableClient_{{goMarkableClient_version}}_Darwin_arm64.tar.gz"
-        extract: true
 
   tasks:
     - import_tasks: tasks/osx.yml
@@ -208,6 +200,6 @@
   roles:
     - geerlingguy.mac.homebrew
     - geerlingguy.mac.mas
-    - ansible-role-shell
+    - ansible-role-dotfiles
     - ansible-role-pip
     - ansible-role-binaries

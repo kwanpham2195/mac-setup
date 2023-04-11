@@ -49,7 +49,7 @@ defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
 # Finder: show hidden files by default
-# defaults write com.apple.finder AppleShowAllFiles -bool true
+defaults write com.apple.finder AppleShowAllFiles -bool true
 
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
@@ -160,13 +160,13 @@ defaults write com.apple.mail DisableInlineAttachmentViewing -bool yes
 ###############################################################################
 
 if [[ "$RUN_AS_ROOT" = true ]]; then
-  # Disable Spotlight indexing for any volume that gets mounted and has not yet
-  # been indexed before.
-  # Use `sudo mdutil -i off "/Volumes/foo"` to stop indexing any volume.
-  sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
+	# Disable Spotlight indexing for any volume that gets mounted and has not yet
+	# been indexed before.
+	# Use `sudo mdutil -i off "/Volumes/foo"` to stop indexing any volume.
+	sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
 
-  # Restart spotlight
-  killall mds > /dev/null 2>&1
+	# Restart spotlight
+	killall mds >/dev/null 2>&1
 fi
 
 ###############################################################################
@@ -192,6 +192,5 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
 # enable key repeat for holding keys
 defaults write md.obsidian ApplePressAndHoldEnabled -bool false
-
 
 echo "Restart macbook in order to finalize settings"
