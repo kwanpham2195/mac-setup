@@ -1,6 +1,6 @@
 ## Mac Setup
 
-⚙️ Automatic configuration for my Mac (a fork from [Allaman](https://github.com/Allaman) mac setup: https://github.com/Allaman/mac-setup)
+⚙️ Automatic configuration for my Mac
 
 Automatic installation is based upon the following [Ansible](https://www.ansible.com/) roles:
 
