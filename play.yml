@@ -14,10 +14,12 @@
 
     homebrew_installed_packages:
       # - alacritty
+      - ansible-lint
       - argo
       - argocd
       - awscli
       - bat # cat with wings
+      - bottom # htop alternative
       - cmake
       - coreutils # GNU File, Shell, and Text utilities
       - datawire/blackbird/telepresence-legacy
@@ -25,6 +27,7 @@
       - dog # command line DNS client
       - dua-cli # View disk space usage and delete unwanted data, fast
       - duf # Disk Usage/Free Utility
+      - dive # Tool for explore each layer in docker image
       - entr # Run arbitrary commands when files change
       - exa # Modern replacement for 'ls'
       - fd # Simple, fast and user-friendly alternative to find
@@ -83,6 +86,7 @@
       - moreutils # Collection of tools that nobody wrote when UNIX was young
       - msmtp
       - mysql-client
+      - miller # Miller is like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and tabular JSON
       - neomutt # command line mail reader
       - neovim
       - neovim-remote
@@ -126,8 +130,12 @@
       - wget
       - xclip
       - yq
+      - yt-dlp # youtube downloader
       - zoxide # smart cd command
       - hashicorp/tap/consul
+      - hashicorp/tap/vault
+      - golang-migrate
+      - sqlc
 
     homebrew_uninstalled_packages: []
 
@@ -137,7 +145,7 @@
 
     homebrew_cask_apps:
       # - alt-tab # Alt tab like window
-      - bartender # Menu bar icon organizer
+      # - bartender # Menu bar icon organizer
       # - betterdisplay # more display options
       # - docker
       - firefox
