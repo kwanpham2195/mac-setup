@@ -7,13 +7,9 @@
     osx_script: ./files/osx.sh
 
     mas_installed_apps:
-      - { id: 405843582, name: "Alfred" }
-      - { id: 441258766, name: "Magnet" }
-      - { id: 1444383602, name: "GoodNotes 5" }
       - { id: 1534275760, name: "Languagetool" }
 
     homebrew_installed_packages:
-      # - alacritty
       - ansible-lint
       - argo
       - argocd
@@ -38,13 +34,11 @@
       - gh # GitHub command-line
       - git-delta # A syntax-highlighting pager for git, diff, and grep output
       - git-filter-repo # Quickly rewrite git repository history
-      - gitui # terminal-ui for git written in rust
       - glow # Render markdown on the CLI
       - gnu-tar
       - go
       - golangci-lint
       - gomodifytags
-      - gopass
       - goreleaser
       - gron # Make JSON greppable!
       - hadolint # Dockerfile linter, validate inline bash
@@ -66,8 +60,6 @@
       - k9s # terminal based UI to interact with your Kubernetes clusters
       - khal # cli calendar
       - kind
-      - koekeishiya/formulae/skhd # Hotkey Daemon MacOS
-      - koekeishiya/formulae/yabai # Tiling Window Manager
       - kube-linter
       - kubeconform # Kubernetes manifest validation tool
       - kubectx
@@ -87,17 +79,12 @@
       - msmtp
       - mysql-client
       - miller # Miller is like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and tabular JSON
-      - neomutt # command line mail reader
       - neovim
       - neovim-remote
-      - newsboat # RSS feed reader
       - nmap
       - nnn # Terminal file manager
-      - notmuch # Thread-based email index, search, and tagging
-      - notmuch-mutt
       - npm
       - n # node version manager
-      - xwmx/taps/nb # note taking app
       - openjdk@11
       - openjdk@17
       - pandoc # Universal markup converter
@@ -105,7 +92,6 @@
       - prettier
       - pulumi # Terraform alt
       - pwgen # Password gen
-      - rcm # *rc file manager
       - ripgrep
       - shellcheck # shell script analysis tool
       - sketchybar
@@ -116,17 +102,14 @@
       - terraform-docs
       - texlab
       - tflint
-      - tig
       - tmux
       - tokei # Count code
       - trash-cli
       - tree
       - urlview
       - vale
-      - vdirsyncer
       - viddy # modern watch command
       - vifm # file manager with curses interface
-      - w3m # Pager/text based browser
       - wget
       - xclip
       - yq
@@ -157,7 +140,6 @@
       - syncthing # Sync data between devices
       - skim # pdf viewer for vim-latex
       - shottr # screencapture tool
-      # - forklift # finder alternative
       - linearmouse # mouse util
       - nikitabobko/tap/aerospace
 
