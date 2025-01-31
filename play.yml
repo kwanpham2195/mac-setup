@@ -29,7 +29,7 @@
       - duf # Disk Usage/Free Utility
       - dive # Tool for explore each layer in docker image
       - entr # Run arbitrary commands when files change
-      - exa # Modern replacement for 'ls'
+      - eza # Modern replacement for 'ls'
       - fd # Simple, fast and user-friendly alternative to find
       - findutils # Collection of GNU find, xargs, and locate
       - fluxcd/tap/flux # a set of continuous and progressive delivery solutions for Kubernetes that are open and extensible
@@ -136,6 +136,7 @@
       - hashicorp/tap/vault
       - golang-migrate
       - sqlc
+      - libpq # Postgres utilities
 
     homebrew_uninstalled_packages: []
 
@@ -148,30 +149,17 @@
       # - bartender # Menu bar icon organizer
       # - betterdisplay # more display options
       # - docker
-      - firefox
       - font-hack-nerd-font
       - google-cloud-sdk
-      # - google-chrome
-      - handbrake # Open-source video transcoder
-      - karabiner-elements # keyboard customizer
       - keycastr # keystroke visualizer
       - kitty
-      - keepassxc # Password manager app
-      - libreoffice
       - macfuse # dependecy of telepresence
-      # - middle # Add middle click to Mac
-      # - min # minimal browser with no distractions
-      # - mouse-fix # fix scrolling for external mice
-      # - numi # Calculator and converter application
-      # - postman
-      - stats # System monitor for the menu bar
       - syncthing # Sync data between devices
       - skim # pdf viewer for vim-latex
       - shottr # screencapture tool
-      - boop # scriptable scratchpad for developers
       # - forklift # finder alternative
       - linearmouse # mouse util
-      - 1password/tap/1password-cli
+      - nikitabobko/tap/aerospace
 
     homebrew_cask_uninstalled_apps: []
 

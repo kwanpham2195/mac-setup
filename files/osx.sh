@@ -160,13 +160,13 @@ defaults write com.apple.mail DisableInlineAttachmentViewing -bool yes
 ###############################################################################
 
 if [[ "$RUN_AS_ROOT" = true ]]; then
-	# Disable Spotlight indexing for any volume that gets mounted and has not yet
-	# been indexed before.
-	# Use `sudo mdutil -i off "/Volumes/foo"` to stop indexing any volume.
-	sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
+  # Disable Spotlight indexing for any volume that gets mounted and has not yet
+  # been indexed before.
+  # Use `sudo mdutil -i off "/Volumes/foo"` to stop indexing any volume.
+  sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
 
-	# Restart spotlight
-	killall mds >/dev/null 2>&1
+  # Restart spotlight
+  killall mds >/dev/null 2>&1
 fi
 
 ###############################################################################
@@ -194,3 +194,6 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 defaults write md.obsidian ApplePressAndHoldEnabled -bool false
 
 echo "Restart macbook in order to finalize settings"
+
+# Now, you can move windows by holding ctrl+cmd and dragging any part of the window (not necessarily the window title)
+defaults write -g NSWindowShouldDragOnGesture -bool true
